@@ -172,3 +172,42 @@
             color: var(--accent-color);
             font-weight: 600;
           }
+   </style>
+</head>
+<body>
+    <header>
+        <h1>Доставка Енакиево</h1>
+        <nav>
+            <a href="#menu">Меню</a>
+            <a href="#about">О нас</a>
+            <a href="#contacts">Контакты</a>
+            <a href="#donate">Донат</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="description">
+            Добро пожаловать в «Доставка Енакиево»! Мы предлагаем широкий ассортимент вкусных блюд и напитков, которые доставят прямо к вашему порогу. Наслаждайтесь свежестью и качеством каждой доставки.
+        </section>
+
+        <div class="buttons">
+            <a href="#order">Заказать сейчас</a>
+            <a href="#menu">Посмотреть меню</a>
+        </div>
+        
+        <section class="donate-section" id="donate">
+            <h2>Поддержите нас</h2>
+            <button onclick="window.location.href='https://yourdonateurl.com'">Перейти к донату</button>
+            <div class="card-number">
+                1234 5678 9012 3456
+            </div>
+        </section>
+
+        <section class="contacts" id="contacts">
+            <h2>Контакты</h2>
+            <p>Телефон: +38 (012) 345-67-89</p>
+            <p>Email: info@dostavka-enakievo.com</p>
+            <p>Адрес: г. Енакиево, ул. Примерная, д. 1</p>
+        </section>
+    </div>
+</body>
