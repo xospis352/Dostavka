@@ -1,0 +1,174 @@
+<style>
+        /* Переменные для цветовой схемы */
+        :root {
+            --primary-color: #4A90E2;
+            --secondary-color: #50E3C2;
+            --accent-color: #F5A623;
+            --background-color: #F0F4F8;
+            --text-color: #333333;
+            --header-background: #ffffff;
+            --button-hover: #357ABD;
+            --nav-link-hover: #4A90E2;
+        }
+
+        /* Общие стили */
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: var(--background-color);
+            color: var(--text-color);
+            overflow-x: hidden;
+        }
+
+        header {
+            background: var(--header-background);
+            padding: 20px 40px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: var(--primary-color);
+            text-align: center;
+            font-weight: 700;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 15px;
+            animation: fadeIn 1.5s ease-in;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            position: relative;
+            transition: color 0.3s;
+        }
+
+        nav a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: var(--primary-color);
+            transition: width .3s;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .container {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
+            animation: fadeInUp 2s ease-out;
+        }
+
+        .description {
+            text-align: center;
+            font-size: 1.3em;
+            margin-bottom: 50px;
+            line-height: 1.6;
+            color: var(--text-color);
+            animation: fadeIn 2.5s ease-in;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+            opacity: 0;
+            animation: slideIn 3s forwards;
+        }
+
+        .buttons a {
+            padding: 15px 35px;
+            background: var(--primary-color);
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: background 0.3s, transform 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .buttons a:hover {
+            background: var(--button-hover);
+            transform: scale(1.05);
+        }
+
+        /* Вкладка Донатов */
+        .donate-section {
+            background: #ffffff;
+            padding: 50px 30px;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            text-align: center;
+            margin-bottom: 50px;
+            animation: fadeIn 3.5s ease-in;
+        }
+
+        .donate-section h2 {
+            margin-bottom: 25px;
+            font-size: 1.8em;
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        .donate-section button {
+            padding: 15px 35px;
+            background: var(--accent-color);
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .donate-section button:hover {
+            background: darken(var(--accent-color), 10%);
+            transform: scale(1.05);
+        }
+
+        .card-number {
+            margin-top: 20px;
+            font-size: 1.3em;
+            word-spacing: 5px;
+            color: var(--text-color);
+        }
+
+        /* Контакты */
+        .contacts {
+            text-align: center;
+            margin-bottom: 50px;
+            animation: fadeIn 4s ease-in;
+        }
+
+        .contacts h2 {
+            margin-bottom: 25px;
+            font-size: 1.8em;
+            color: var(--accent-color);
+            font-weight: 600;
+          }
